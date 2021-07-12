@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABHAY's Dashboard</title>
+        <link rel="stylesheet" href="../css/page1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../Js/page1.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <button class="menu" id="btn" onclick="drop()"><i class="fa fa-bars"> MENU</i></button>
+            <h1>DASHBOARD</h1>
+            <div class="nav">
+                <button id="btn" class="nb">Profile</button><br>
+                <button id="btn" class="nb">Slot Booking</button><br>
+                <button id="btn" class="nb" onclick="showalert()">Sign Out</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="column left">
+                <figure>
+                    <img class="dp" src="../media/dp.jpg">
+                    <figcaption>ABHAY PARIHAR</figcaption>
+                </figure>
+                <div class="dose dose1">
+                    <p>DOSE 1</p>
+                    <p>COMPLETED on 14-06-2021</p>
+                    <p>VACCINE: COVISHIELD</p>
+                </div>
+                <div class="dose dose2">
+                    <p>DOSE 2</p>
+                    <p>SCHEDULE AFTER</p>
+                    <p>06-09-2021</p>
+                </div>
+            </div>
+            <div class="column right">
+                <fieldset>
+                    <div class="fc fleft">
+                        FIRST NAME: <input value="ABHAY" readonly>
+                    </div>
+                    <div class="fc fmiddle">
+                        MIDDLE NAME: <input placeholder="MIDDLE NAME" readonly>
+                    </div>
+                    <div class="fc fright">
+                        LAST NAME: <input value="PARIHAR" readonly>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="fc fleft">
+                        PHONE NUMBER: <input value="+91 6265119378" readonly>
+                    </div>
+                    <div class="fc fmiddle">
+                        GENDER: <input value="MALE" readonly>
+                    </div>
+                    <div class="fc fright">
+                        AADHAR NUMBER: <input value="XXXX XXXX 9047" readonly>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="fc fleft">
+                        ADDRESS: <input value="Vill. Nagalwadi" readonly>
+                    </div>
+                    <div class="fc fmiddle">
+                        DISTRICT: <input value="BARWANI" readonly>
+                    </div>
+                    <div class="fc fright">
+                        NATIVE STATE: <input value="MADHYA PRADESH" readonly>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="signoutalert">
+                <span class="sout">Are you sure, You want to Sign Out?</span>
+                <div class="yesno">
+                    <button id="btn"><a href="../index.html"><i class="fa fa-check"> YES</i></a></button>
+                    <button id="btn" onclick="close()"><i class="fa fa-close"> NO</i></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

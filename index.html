@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <title>GetVac</title>
+        <link rel="stylesheet" href="./css/index.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="covid">COVID-19 Vaccination</h1>
+            <button class="login"><a href="./html/login.html"><p class="btext">LogIn</p></a></button>
+        </div>
+        <div class="main">
+            <div class="column left">
+                <h2>WELCOME TO <span class="name">GetVac</span>&#128137;</h2>
+                <div class="select">
+                    <ul>
+                        <li><button id="select" class="svacguide">Vaccination Guidlines</button></li>
+                        <li><button id="select" class="scoviguide">COVID-19 Guidlines</button></li>
+                        <li><button id="select" class="svacdetails">Vaccine Details</button></li>
+                    </ul>
+                </div>
+                <div class="all vac1">
+                    <img src="./media/vac1.jpg">
+                </div>
+                <div class="all vacguide" id="all">
+                    <h3>Vaccination Guidlines</h3>
+                    <ol type="A">
+                        <li>You have to rest at the vaccination centre for atleast half an hour after taking the COVID-19 vaccine.</li>
+                        <li>Inform the nearest health authorities/ANM/ASHA in case you feel any discomfort or uneasiness subsequently.</li>
+                        <li> Remember to continue following key COVID-19 Appropriate Behaviours like wearing of mask, maintaining hand sanitization and physical distance (or 6 feet or Do Gaj).</li>
+                        <li>There is no head-to-head comparison done between the two vaccines being used in India so one cannot choose one over the other. 
+                            Both would work fine in preventing the infection as well as prevent a person from going into severe state of the disease. 
+                            As a long-term effect, it would be preventing death for elderly people or those who have comorbidities.</li>
+                    </ol>
+                </div>
+                <div class="all coviguide" id="all">
+                    <h3>COVID-19 Guidlines</h3>
+                    <ol type="A">
+                        <li>Be informed about the illness. </li>
+                        <li>Stay home, preferably isolate himself / herself in a separate & well-ventilated room. Avoid
+                            common areas frequented by other members of the family. </li>
+                        <li>Avoid close contact with others. If inevitable, always maintain at-least two metres distance.
+                            Avoid having visitors.</li>
+                        <li>Avoid hand shaking and wash hands frequently with soap and water. In case of non-availability of
+                            soap and water, commercially available hand rubs can be used </li>
+                        <li>Take plenty of fluids.</li>
+                        <li>Follow cough etiquettes-
+                            <ul>
+                                <li>Cover mouth and nose with a tissue/ handkerchief when coughing or sneezing; In case
+                                    tissue/handkerchief is not available cough/ sneeze onto your upper arm or shoulder;
+                                    coughing/ sneezing directly onto hands should not be done.</li>
+                                <li>Turn away from others when coughing or sneezing</li>
+                                <li>Do not spit/blow nose here and there, use a water filled receptacle for collecting sputum,
+                                    thereby minimizing aerosol generation.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="all vacdetails" id="all">
+                    <h3>Vaccination Details</h3>
+                    <ul>
+                        <li>COVAXIN: 
+                            <ol type="A">
+                                <li>COVAXIN® is included along with immune-potentiators, also known as vaccine adjuvants, 
+                                    which are added to the vaccine to increase and boost its immunogenicity.</li>
+                                <li>It is a 2-dose vaccination regimen given 28 days apart.</li>
+                                <li>It is a vaccine with no sub-zero storage, no reconstitution requirement, 
+                                    and ready to use liquid presentation in multi-dose vials, stable at 2-8oC.</li>
+                                <li>The vaccine received DCGI approval for Phase I & II Human Clinical Trials in July, 2020.</li>
+                            </ol>
+                        </li>
+                        <li>COVISHIELD:
+                            <ol type="A">
+                                <li>Covishield jab (Oxford-Astrazeneca) vaccine is a viral vector vaccine that uses an adenovirus found in Chimpanzees, 
+                                    ChAD0x1, to deliver spike proteins and mount a tolerable immune response in response to a live virus.</li>
+                                <li>The efficacy rate determines the workability of a given COVID-19 vaccine under clinical settings and showcases how potent it could be, 
+                                    once approved. Now, all four vaccines that we have passed the WHO nod for approval, 
+                                    which state that a vaccine should be at least 50% efficacious against transmission.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column right">
+                <img src="./media/vac2.jpg">
+                <div id="piechart"></div>
+            </div>
+        </div> 
+        <footer>
+            <div class="helpline">
+                <marquee class="mrq"> For any <span class="name">COVID</span>-19 related Information,
+                    Call at Central helpline number<span class="name">+91-11-23978046</span></marquee>
+                <p class="foot">For state helpline numbers visit <span class="name"><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">MoHFW</a></span>.<br></p>
+            </div>
+        </footer>
+        <script src="./Js/index.js"></script>
+    </body>
+</html>

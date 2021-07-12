@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LogIn</title>
+        <link rel="stylesheet" href="../css/login.css">
+        <script src="../Js/login.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>GetVac LogIn</h1>
+        </div>
+        <form class="login" action="./page1.html">
+            <h2>Enter Your Credentials</h2>
+            <input class="user" id="user" placeholder="USERNAME" required>
+            <input class="pass" id="pass" placeholder="PASSWORD" type="password" required><br>
+            <input type="submit" class="submit" value="LogIn" onclick="validate()" >
+            <div class="showerror">
+                <p>Please enter valid Credentials.</p>
+                <p>Check <a href="https://github.com/A-Spiral-Forge/WebD-Selection">ReadMe</a> file for LogIn Credentials.</p>
+            </div>
+        </form>
+        <video autoplay loop class="vid">
+            <source src="../media/COVID-anime.mp4" type="video/mp4">
+            Your Browser doesn't support video.
+        </video>
+    </body>
+</html>
